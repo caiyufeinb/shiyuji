@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">shiyuji</string>
+    <string name="UserName">用户名</string>
+    <string name="PassWord">密码</string>
+    <string name="support">请输入你的用户名</string>
+    <string name="supportpsw">请输入你的密码</string>
+    <string name="supportCheck">是否记住账号密码</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="check">确认密码</string>
+    <string name="out">退出</string>
+</resources>
