@@ -13,6 +13,11 @@ import android.widget.Toast;
 
 import com.example.hasee.shiyuji.DB.GameUser;
 import com.example.hasee.shiyuji.Dao.GameUserDao;
+import com.example.hasee.shiyuji.Dao.coldDao;
+import com.example.hasee.shiyuji.Dao.coolDao;
+import com.example.hasee.shiyuji.Dao.hotDao;
+import com.example.hasee.shiyuji.Dao.normalDao;
+import com.example.hasee.shiyuji.Dao.warmDao;
 import com.example.hasee.shiyuji.R;
 import com.example.hasee.shiyuji.Test.User;
 
@@ -83,7 +88,8 @@ public class LoginActivity extends AppCompatActivity {
                             editor.apply();
                             Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                             startActivity(intent);
-                            Toast.makeText(LoginActivity.this, "登录成功", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(LoginActivity.this, "登录成功" + gameUser.getMoney(), Toast.LENGTH_SHORT).show();
+
                         } else {
                             Toast.makeText(LoginActivity.this, "登录失败，账号密码错误" + e.getMessage(), Toast.LENGTH_SHORT).show();
                         }
@@ -100,5 +106,7 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
     }
 }

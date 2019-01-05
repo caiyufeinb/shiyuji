@@ -1,74 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+
     <RelativeLayout
+        android:id="@+id/top"
         android:layout_width="match_parent"
         android:layout_height="520dp"
-        android:id="@+id/top"
         android:background="@drawable/backgroundmain">
+
         <ImageView
             android:layout_width="300dp"
             android:layout_height="300dp"
-            android:src="@drawable/bagua"
             android:layout_centerInParent="true"
-            android:background="@android:color/transparent" />
-        <TextView
-            android:id="@+id/money"
+            android:background="@android:color/transparent"
+            android:src="@drawable/bagua" />
+
+        <LinearLayout
+            android:id="@+id/money1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:text="金币"
-            android:textSize="20sp"
-            android:textColor="#000"
-            android:layout_alignParentEnd="true" />
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/money"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
         <Button
+            android:id="@+id/signUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="签到"
-            android:layout_below="@+id/money"
+            android:layout_below="@+id/money1"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+            android:text="签到" />
+
         <ImageButton
             android:id="@+id/btn_1"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:src="@drawable/phoenix"
-            android:scaleType="fitCenter"
-            android:background="@android:color/transparent"
-            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/phoenix" />
+
         <ImageButton
             android:id="@+id/btn_2"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:src="@drawable/dragon"
-            android:scaleType="fitCenter"
+            android:layout_centerVertical="true"
             android:background="@android:color/transparent"
-            android:layout_centerVertical="true" />
+            android:scaleType="fitCenter"
+            android:src="@drawable/dragon" />
+
         <ImageButton
             android:id="@+id/btn_3"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:src="@drawable/pom"
-            android:scaleType="fitCenter"
-            android:background="@android:color/transparent"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/pom" />
+
         <ImageButton
             android:id="@+id/btn_4"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:src="@drawable/tortoise"
-            android:scaleType="fitCenter"
-            android:background="@android:color/transparent"
-            android:layout_centerHorizontal="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="20dp" />
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/tortoise" />
 
 
     </RelativeLayout>
@@ -78,20 +96,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        <Button
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/bag"
-            android:text="背包"/>
-        <Button
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:id="@+id/choujiang"
-            android:text="抽奖"/>
-    </LinearLayout>
 
+        <Button
+            android:id="@+id/bag"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="背包" />
+
+        <Button
+            android:id="@+id/choujiang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="抽奖" />
+    </LinearLayout>
 
 
 </LinearLayout>

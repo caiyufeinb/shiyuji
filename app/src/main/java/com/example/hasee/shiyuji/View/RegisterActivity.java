@@ -25,6 +25,7 @@ public class RegisterActivity extends AppCompatActivity {
     private EditText checkPassword;
     private Button register;
     private Button out;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,12 +46,12 @@ public class RegisterActivity extends AppCompatActivity {
                 String checkPwd = checkPassword.getText().toString();
                 LogUtil.v(TAG, pwd + "1234567");
                 LogUtil.v(TAG, checkPwd + "1234567");
-                if(account.equals("") || pwd.equals("") || checkPwd.equals("")){
-                    Toast.makeText(RegisterActivity.this, "请填写信息" ,Toast.LENGTH_SHORT).show();
-                }else{
-                    if(!pwd.equals(checkPwd)){
-                        Toast.makeText(RegisterActivity.this, "两次输入密码不一致，请重新填写" ,Toast.LENGTH_SHORT).show();
-                    }else{
+                if (account.equals("") || pwd.equals("") || checkPwd.equals("")) {
+                    Toast.makeText(RegisterActivity.this, "请填写信息", Toast.LENGTH_SHORT).show();
+                } else {
+                    if (!pwd.equals(checkPwd)) {
+                        Toast.makeText(RegisterActivity.this, "两次输入密码不一致，请重新填写", Toast.LENGTH_SHORT).show();
+                    } else {
                         GameUserDao.signUp(account, pwd, RegisterActivity.this);
                         Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
                         startActivity(intent);

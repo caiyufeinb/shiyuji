@@ -9,4 +9,5 @@
     <string name="register">注册</string>
     <string name="check">确认密码</string>
     <string name="out">退出</string>
+    <string name="money">金币:</string>
 </resources>

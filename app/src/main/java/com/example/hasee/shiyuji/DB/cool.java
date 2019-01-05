@@ -8,7 +8,7 @@ import cn.bmob.v3.BmobObject;
  * 食物名字foodName
  * 食物功效，用来评判通关星级effect
  */
-public class cool extends BmobObject {
+public class Cool extends BmobObject {
     private String foodName;
 
     private String effect;
@@ -17,7 +17,7 @@ public class cool extends BmobObject {
         return foodName;
     }
 
-    public cool setFoodName(String foodName) {
+    public Cool setFoodName(String foodName) {
         this.foodName = foodName;
         return this;
     }
@@ -26,7 +26,7 @@ public class cool extends BmobObject {
         return effect;
     }
 
-    public cool setEffect(String effect) {
+    public Cool setEffect(String effect) {
         this.effect = effect;
         return this;
     }
