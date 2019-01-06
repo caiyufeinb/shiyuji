@@ -9,6 +9,7 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.hasee.shiyuji.DB.Cold;
 import com.example.hasee.shiyuji.DB.GameUser;
 import com.example.hasee.shiyuji.Dao.GameUserDao;
 import com.example.hasee.shiyuji.Log.LogUtil;
@@ -17,8 +18,10 @@ import com.example.hasee.shiyuji.Test.User;
 
 import cn.bmob.v3.BmobQuery;
 import cn.bmob.v3.BmobUser;
+import cn.bmob.v3.datatype.BmobRelation;
 import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.QueryListener;
+import cn.bmob.v3.listener.UpdateListener;
 
 
 /**
@@ -33,8 +36,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     ImageButton button2 = null; //青龙图片按钮
     ImageButton button3 = null; //白虎图片按钮
     ImageButton button4 = null; //玄武图片按钮
-    private TextView money = null;    //金币显示文本框
-    private Button signUp = null;   //签到领金币按钮
+    TextView money = null;    //金币显示文本框
+    Button signUp = null;   //签到领金币按钮
     private static final String TAG = "MainActivity";
 
     @Override
@@ -56,6 +59,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //查询用户当前金币数
         GameUser user = BmobUser.getCurrentUser(GameUser.class);
         money.setText(String.valueOf(user.getMoney()));
+        /*测试代码，测试能否添加食物和角色的多对多关联
+        测试结果成功
+        Cold cold = new Cold();
+        cold.setObjectId("43YdMMMe");
+        //创建BmobRelation对象
+        BmobRelation relation = new BmobRelation();
+        //将当前用户添加到食物表中的relation字段值中，表明当前用户拥有该食物
+        relation.add(user);
+        //多对多关联指向cold的relation字段
+        cold.setRelation(relation);
+        cold.update(new UpdateListener() {
+            @Override
+            public void done(BmobException e) {
+                if(e == null){
+                    LogUtil.v(TAG, "添加关联成功");
+                }else{
+                    LogUtil.v(TAG, "添加关联失败" + e.getMessage());
+                }
+            }
+        });
+        */
     }
 
     @Override
