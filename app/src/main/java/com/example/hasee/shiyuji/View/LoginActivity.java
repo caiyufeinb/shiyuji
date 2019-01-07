@@ -12,14 +12,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.hasee.shiyuji.DB.GameUser;
-import com.example.hasee.shiyuji.Dao.GameUserDao;
-import com.example.hasee.shiyuji.Dao.coldDao;
-import com.example.hasee.shiyuji.Dao.coolDao;
-import com.example.hasee.shiyuji.Dao.hotDao;
-import com.example.hasee.shiyuji.Dao.normalDao;
-import com.example.hasee.shiyuji.Dao.warmDao;
 import com.example.hasee.shiyuji.R;
-import com.example.hasee.shiyuji.Test.User;
 
 import cn.bmob.v3.Bmob;
 import cn.bmob.v3.exception.BmobException;
@@ -31,8 +24,8 @@ import cn.bmob.v3.listener.SaveListener;
  * 选择记住账号密码之后，用户下次打开软件就可以直接登录
  */
 public class LoginActivity extends AppCompatActivity {
-    private Button login;//登录按钮
-    private Button register;//注册按钮
+    Button login;//登录按钮
+    Button register;//注册按钮
     private SharedPreferences pref;//保存账号密码的控件
     private SharedPreferences.Editor editor;//将保存的账号密码输入文本框
     private CheckBox rememberPass;//选择是否要保存账号密码

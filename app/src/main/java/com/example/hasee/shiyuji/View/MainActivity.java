@@ -7,20 +7,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.hasee.shiyuji.DB.Cold;
 import com.example.hasee.shiyuji.DB.GameUser;
-import com.example.hasee.shiyuji.Dao.GameUserDao;
 import com.example.hasee.shiyuji.Log.LogUtil;
 import com.example.hasee.shiyuji.R;
-import com.example.hasee.shiyuji.Test.User;
 
-import cn.bmob.v3.BmobQuery;
 import cn.bmob.v3.BmobUser;
 import cn.bmob.v3.datatype.BmobRelation;
 import cn.bmob.v3.exception.BmobException;
-import cn.bmob.v3.listener.QueryListener;
 import cn.bmob.v3.listener.UpdateListener;
 
 
@@ -38,6 +33,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     ImageButton button4 = null; //玄武图片按钮
     TextView money = null;    //金币显示文本框
     Button signUp = null;   //签到领金币按钮
+    Button bag = null;      //背包按钮
     private static final String TAG = "MainActivity";
 
     @Override
@@ -56,11 +52,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         money = findViewById(R.id.money);
         signUp = findViewById(R.id.signUp);
         signUp.setOnClickListener(this);
+        bag = findViewById(R.id.bag);
+        bag.setOnClickListener(this);
         //查询用户当前金币数
         GameUser user = BmobUser.getCurrentUser(GameUser.class);
         money.setText(String.valueOf(user.getMoney()));
         /*测试代码，测试能否添加食物和角色的多对多关联
-        测试结果成功
+        结果:测试结果成功
         Cold cold = new Cold();
         cold.setObjectId("43YdMMMe");
         //创建BmobRelation对象
@@ -80,11 +78,29 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
         */
+        /*
+        测试代码，添加人物拥有的食物
+         */
+        Cold cold = new Cold();
+        cold.setObjectId("43YdMMMe");
+        BmobRelation relation = new BmobRelation();
+        relation.add(cold);
+        user.setHaving(relation);
+        user.update(new UpdateListener() {
+            @Override
+            public void done(BmobException e) {
+                if(e == null){
+                    LogUtil.v(TAG, "添加关联成功");
+                }else{
+                    LogUtil.v(TAG, "添加关联失败" + e.getMessage());
+                }
+            }
+        });
     }
 
     @Override
     public void onClick(View v) {
-        Intent intent = null;
+        Intent intent;
         switch (v.getId()) {
             case R.id.btn_1:
                 intent = new Intent(MainActivity.this, GameActivity.class);
@@ -102,6 +118,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 intent = new Intent(MainActivity.this, GameActivity.class);
                 startActivity(intent);
                 break;
+            case R.id.bag:
+                intent = new Intent(MainActivity.this, BagActivity.class);
+                startActivity(intent);
             default:
                 break;
         }

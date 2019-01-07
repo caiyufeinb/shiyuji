@@ -1,6 +1,7 @@
 package com.example.hasee.shiyuji.DB;
 
 import cn.bmob.v3.BmobUser;
+import cn.bmob.v3.datatype.BmobRelation;
 
 /**
  * 该表对应用户表
@@ -9,6 +10,7 @@ import cn.bmob.v3.BmobUser;
  * 密码
  * 通关关卡数
  * 金币
+ * 拥有的食物种类
  */
 public class GameUser extends BmobUser {
     /*
@@ -19,6 +21,20 @@ public class GameUser extends BmobUser {
     拥有金币
      */
     private Double money;
+
+    /*
+    用户拥有的食物种类
+     */
+    private BmobRelation having;
+
+    public BmobRelation getHaving() {
+        return having;
+    }
+
+    public GameUser setHaving(BmobRelation having) {
+        this.having = having;
+        return this;
+    }
 
     public Integer getMission() {
         return mission;

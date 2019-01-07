@@ -10,4 +10,11 @@
     <string name="check">确认密码</string>
     <string name="out">退出</string>
     <string name="money">金币:</string>
+    <string name="cold">寒性</string>
+    <string name="cool">凉性</string>
+    <string name="hot">热性</string>
+    <string name="warm">温性</string>
+    <string name="normal">平性</string>
+    <string name="back">返回</string>
+
 </resources>

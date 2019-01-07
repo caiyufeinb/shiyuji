@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <!--左边的分类按钮-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/btn_cold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:padding="35dp"
+            android:text="@string/cold"
+            android:textSize="20sp" />
+        <!--分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/btn_cool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="35dp"
+            android:text="@string/cool"
+            android:textSize="20sp" />
+        <!--分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/btn_hot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="35dp"
+            android:text="@string/hot"
+            android:textSize="20sp" />
+        <!--分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/btn_warm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="35dp"
+            android:text="@string/warm"
+            android:textSize="20sp" />
+        <!--分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/btn_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="35dp"
+            android:text="@string/normal"
+            android:textSize="20sp" />
+        <!--分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="35dp"
+            android:paddingTop="30dp"
+            android:paddingRight="35dp"
+            android:paddingBottom="20dp"
+            android:text="@string/back"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <!--分割线-->
+    <View
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent" />
+    <!--背包的RecyclerView布局，他的子项由CardView包裹，显示圆角边框-->
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--该RecyclerView用来显示用户拥有的食物-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</LinearLayout>

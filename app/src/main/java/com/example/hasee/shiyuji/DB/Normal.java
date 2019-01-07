@@ -9,6 +9,7 @@ import cn.bmob.v3.datatype.BmobRelation;
  * 食物名字foodName
  * 食物功效，用来评判通关星级effect
  * 关联属性，用来关联用户表，代表用户是否拥有这种食物
+ * 图片id，存放食物的图片存放的位置
  */
 public class Normal extends BmobObject {
     private String foodName;
@@ -16,6 +17,17 @@ public class Normal extends BmobObject {
     private String effect;
 
     private BmobRelation relation;
+
+    private Integer imageId;
+
+    public Integer getImageId() {
+        return imageId;
+    }
+
+    public Normal setImageId(Integer imageId) {
+        this.imageId = imageId;
+        return this;
+    }
 
     public BmobRelation getRelation() {
         return relation;

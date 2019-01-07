@@ -33,7 +33,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".View.RegisterActivity"></activity>
+        <activity android:name=".View.RegisterActivity" />
+        <activity android:name=".View.BagActivity" />
+        <activity android:name=".View.bag_foodActivity"></activity>
     </application>
 
 </manifest>

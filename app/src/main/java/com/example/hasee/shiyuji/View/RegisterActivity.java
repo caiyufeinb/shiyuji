@@ -23,8 +23,8 @@ public class RegisterActivity extends AppCompatActivity {
     private EditText userName;
     private EditText password;
     private EditText checkPassword;
-    private Button register;
-    private Button out;
+    Button register;
+    Button out;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
