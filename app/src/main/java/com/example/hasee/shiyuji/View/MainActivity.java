@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         */
         /*
         测试代码，添加人物拥有的食物
-         */
+        添加结果，添加成功
         Cold cold = new Cold();
         cold.setObjectId("43YdMMMe");
         BmobRelation relation = new BmobRelation();
@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     LogUtil.v(TAG, "添加关联失败" + e.getMessage());
                 }
             }
-        });
+        });*/
     }
 
     @Override
