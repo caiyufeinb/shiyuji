@@ -6,9 +6,12 @@ import android.content.DialogInterface;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -28,7 +31,11 @@ public class quesColdAdapter extends RecyclerView.Adapter<quesColdAdapter.ViewHo
     private static final String TAG = "quesColdAdapter";
     private Context context;
     private List<Cold> coldList;
-
+    //定义对话框按钮
+    private Button button_determine;
+    private Button button_cancel;
+    //定义对话框
+    private AlertDialog dig;
     /*
     构造函数，将包含数据的数组传入
      */
@@ -59,6 +66,14 @@ public class quesColdAdapter extends RecyclerView.Adapter<quesColdAdapter.ViewHo
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         //此处填写答题评分逻辑
+                        dig = new AlertDialog.Builder(context).create();
+                        dig.show();//显示对话框
+                        Window window = dig.getWindow();//对话框窗口
+                        window.setGravity(Gravity.CENTER);//设置对话框显示中间的位置
+                        window.setContentView(R.layout.dialog_layout);
+                        //获取对话框按钮
+                        button_determine = window.findViewById(R.id.dialog_confirm);
+                        button_cancel = window.findViewById(R.id.dialog_back);
                         LogUtil.d(TAG, "点击确定");
                     }
                 });

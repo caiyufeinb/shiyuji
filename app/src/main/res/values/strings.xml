@@ -16,5 +16,6 @@
     <string name="warm">温性</string>
     <string name="normal">平性</string>
     <string name="back">返回</string>
-
+    <string name="result">游戏结果</string>
+    <string name="confirm">确定</string>
 </resources>

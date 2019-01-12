@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkGray"
+        android:orientation="vertical">
+        <!--提示游戏结果的文本框-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:hint="@string/result"/>
+        <!--分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/white"
+            android:layout_marginTop="4dp"/>
+        <!--星星控件-->
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:numStars="4"/>
+        <!--祝贺语句-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:hint="Excellent"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightGray"
+        android:orientation="horizontal">
+        <com.example.hasee.shiyuji.Button.StateButton
+            android:id="@+id/dialog_confirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/confirm"
+            android:textSize="30sp"
+            app:radius="5dp"
+            app:animationDuration="200"
+            app:normalStrokeWidth="2dp"
+            app:pressedStrokeWidth="4dp"
+            app:normalStrokeColor="@android:color/black"
+            app:pressedStrokeColor="@android:color/white"
+            app:normalBackgroundColor="@color/colorPrimaryDark"
+            app:pressedBackgroundColor="@color/colorAccent"
+
+
+            />
+        <com.example.hasee.shiyuji.Button.StateButton
+            android:id="@+id/dialog_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="30sp"
+            android:text="@string/back"
+            app:radius="5dp"
+            app:animationDuration="200"
+            app:normalStrokeWidth="2dp"
+            app:pressedStrokeWidth="4dp"
+            app:normalStrokeColor="@android:color/black"
+            app:pressedStrokeColor="@android:color/white"
+            app:normalBackgroundColor="@color/colorPrimaryDark"
+            app:pressedBackgroundColor="@color/colorAccent"
+
+
+            />
+    </LinearLayout>
+
+</LinearLayout>
