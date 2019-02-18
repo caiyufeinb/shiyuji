@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
@@ -34,6 +35,8 @@ public class quesColdAdapter extends RecyclerView.Adapter<quesColdAdapter.ViewHo
     //定义对话框按钮
     private Button button_determine;
     private Button button_cancel;
+    //设置星星评分控件
+    private RatingBar ratingBar;
     //定义对话框
     private AlertDialog dig;
     /*
@@ -71,6 +74,9 @@ public class quesColdAdapter extends RecyclerView.Adapter<quesColdAdapter.ViewHo
                         Window window = dig.getWindow();//对话框窗口
                         window.setGravity(Gravity.CENTER);//设置对话框显示中间的位置
                         window.setContentView(R.layout.dialog_layout);
+                        //获取星星评分控件
+                        ratingBar = window.findViewById(R.id.ratingBar);
+                        ratingBar.setRating(2); //测试设置评分为两颗星
                         //获取对话框按钮
                         button_determine = window.findViewById(R.id.dialog_confirm);
                         button_cancel = window.findViewById(R.id.dialog_back);

@@ -63,6 +63,10 @@ public class questionActivity extends AppCompatActivity implements View.OnClickL
     private quesNormalAdapter adapterNormal;
     /*
     缺少功能：给各个食物添加图片id，等图片到后再添加数据
+
+
+
+
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {

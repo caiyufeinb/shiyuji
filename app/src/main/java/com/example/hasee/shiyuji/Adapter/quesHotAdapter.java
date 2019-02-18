@@ -6,10 +6,14 @@ import android.content.DialogInterface;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
@@ -29,7 +33,13 @@ public class quesHotAdapter extends RecyclerView.Adapter<quesHotAdapter.ViewHold
     private static final String TAG = "quesHotAdapter";
     private Context context;
     private List<Hot> hotList;
-
+    //定义对话框按钮
+    private Button button_determine;
+    private Button button_cancel;
+    //设置星星评分控件
+    private RatingBar ratingBar;
+    //定义对话框
+    private AlertDialog dig;
     /*
     构造函数，将包含数据的数组传入
      */
@@ -60,6 +70,17 @@ public class quesHotAdapter extends RecyclerView.Adapter<quesHotAdapter.ViewHold
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         //此处填写答题评分逻辑
+                        dig = new AlertDialog.Builder(context).create();
+                        dig.show();//显示对话框
+                        Window window = dig.getWindow();//对话框窗口
+                        window.setGravity(Gravity.CENTER);//设置对话框显示中间的位置
+                        window.setContentView(R.layout.dialog_layout);
+                        //获取星星评分控件
+                        ratingBar = window.findViewById(R.id.ratingBar);
+                        ratingBar.setRating(2); //测试设置评分为两颗星
+                        //获取对话框按钮
+                        button_determine = window.findViewById(R.id.dialog_confirm);
+                        button_cancel = window.findViewById(R.id.dialog_back);
                         LogUtil.d(TAG, "点击确定");
                     }
                 });

@@ -1,8 +1,10 @@
 package com.example.hasee.shiyuji.View;
 
 import android.content.Intent;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -10,6 +12,7 @@ import android.widget.TextView;
 
 import com.example.hasee.shiyuji.DB.Cold;
 import com.example.hasee.shiyuji.DB.GameUser;
+import com.example.hasee.shiyuji.DB.Normal;
 import com.example.hasee.shiyuji.Log.LogUtil;
 import com.example.hasee.shiyuji.R;
 
@@ -58,6 +61,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         GameUser user = BmobUser.getCurrentUser(GameUser.class);
         money.setText(String.valueOf(user.getMoney()));
         /*测试代码，测试能否添加食物和角色的多对多关联
+        表示食物被哪些用户拥有
         结果:测试结果成功
         Cold cold = new Cold();
         cold.setObjectId("43YdMMMe");
@@ -80,11 +84,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         */
         /*
         测试代码，添加人物拥有的食物
+        表示该用户拥有哪些食物
         添加结果，添加成功
-        Cold cold = new Cold();
-        cold.setObjectId("43YdMMMe");
+        Normal normal = new Normal();
+        normal.setObjectId("7d1148f29a");
         BmobRelation relation = new BmobRelation();
-        relation.add(cold);
+        relation.add(normal);
         user.setHaving(relation);
         user.update(new UpdateListener() {
             @Override
@@ -95,7 +100,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     LogUtil.v(TAG, "添加关联失败" + e.getMessage());
                 }
             }
-        });*/
+        });
+        /*
+        测试代码
+        测试是否能在数据库中添加食物的图片id来实现显示图片的效果
+        测试结果：成功*/
+        Cold jiaobai = new Cold();
+        jiaobai.setImageId(R.drawable.jiaobai);
+        jiaobai.update("43YdMMMe", new UpdateListener() {
+            @Override
+            public void done(BmobException e) {
+                if(e == null){
+                    LogUtil.v(TAG, "添加图片id成功");
+                }else{
+                    LogUtil.v(TAG, "添加图片id失败" + e.getMessage());
+                }
+            }
+        });
     }
 
     @Override

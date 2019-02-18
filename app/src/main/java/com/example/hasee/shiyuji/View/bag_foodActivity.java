@@ -48,6 +48,9 @@ public class bag_foodActivity extends AppCompatActivity {
         }
         collapsingToolbar.setTitle(foodName);
         Glide.with(this).load(foodId).into(foodImageView);
+
+
+
         //设置详细内容介绍，以后实现
         foodContextText.setText("");
 

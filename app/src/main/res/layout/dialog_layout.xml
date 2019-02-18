@@ -13,27 +13,41 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="40sp"
-            android:hint="@string/result"/>
+            android:textSize="30sp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/result"
+            android:layout_marginStart="30dp" />
         <!--分割线-->
         <View
             android:layout_width="match_parent"
-            android:layout_height="2dp"
+            android:layout_height="1dp"
             android:background="@color/white"
-            android:layout_marginTop="4dp"/>
+            android:layout_marginTop="2dp"/>
         <!--星星控件-->
         <RatingBar
+            android:id="@+id/ratingBar"
+            style="@style/RatingBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@color/darkGray"
             android:layout_gravity="center_horizontal"
-            android:numStars="4"/>
+            android:isIndicator="true"
+            android:numStars="3" />
         <!--祝贺语句-->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:hint="Excellent"
-            android:textSize="30sp" />
+            android:textSize="20sp" />
+        <!--分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            android:layout_marginTop="2dp"/>
     </LinearLayout>
 
     <LinearLayout
@@ -41,13 +55,14 @@
         android:layout_height="wrap_content"
         android:background="@color/lightGray"
         android:orientation="horizontal">
+        <!--状态按钮，用来返回游戏界面-->
         <com.example.hasee.shiyuji.Button.StateButton
             android:id="@+id/dialog_confirm"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/confirm"
-            android:textSize="30sp"
+            android:textSize="20sp"
             app:radius="5dp"
             app:animationDuration="200"
             app:normalStrokeWidth="2dp"
@@ -55,16 +70,14 @@
             app:normalStrokeColor="@android:color/black"
             app:pressedStrokeColor="@android:color/white"
             app:normalBackgroundColor="@color/colorPrimaryDark"
-            app:pressedBackgroundColor="@color/colorAccent"
-
-
-            />
+            app:pressedBackgroundColor="@color/colorAccent" />
+        <!--状态按钮，用来返回游戏界面-->
         <com.example.hasee.shiyuji.Button.StateButton
             android:id="@+id/dialog_back"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="30sp"
+            android:textSize="20sp"
             android:text="@string/back"
             app:radius="5dp"
             app:animationDuration="200"
@@ -73,10 +86,7 @@
             app:normalStrokeColor="@android:color/black"
             app:pressedStrokeColor="@android:color/white"
             app:normalBackgroundColor="@color/colorPrimaryDark"
-            app:pressedBackgroundColor="@color/colorAccent"
-
-
-            />
+            app:pressedBackgroundColor="@color/colorAccent" />
     </LinearLayout>
 
 </LinearLayout>

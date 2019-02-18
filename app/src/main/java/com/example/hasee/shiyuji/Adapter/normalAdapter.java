@@ -47,7 +47,7 @@ public class normalAdapter extends RecyclerView.Adapter<normalAdapter.ViewHolder
             public void onClick(View v) {
                 int position = holder.getAdapterPosition();
                 Normal normal = normalList.get(position);
-                Intent intent = new Intent(context, BagActivity.class);
+                Intent intent = new Intent(context, bag_foodActivity.class);
                 intent.putExtra(bag_foodActivity.FOOD_NAME, normal.getFoodName());
                 intent.putExtra(bag_foodActivity.FOOD_IMAGE_ID, normal.getImageId());
                 //用来提示自己点击的 是哪种类型的食物
