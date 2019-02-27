@@ -1,23 +1,22 @@
 package com.example.hasee.shiyuji.View;
 
 import android.content.Intent;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.example.hasee.shiyuji.DB.Cold;
+import com.example.hasee.shiyuji.DB.Cool;
 import com.example.hasee.shiyuji.DB.GameUser;
 import com.example.hasee.shiyuji.DB.Normal;
+import com.example.hasee.shiyuji.DB.Warm;
 import com.example.hasee.shiyuji.Log.LogUtil;
 import com.example.hasee.shiyuji.R;
 
 import cn.bmob.v3.BmobUser;
-import cn.bmob.v3.datatype.BmobRelation;
 import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.UpdateListener;
 
@@ -111,12 +110,172 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void done(BmobException e) {
                 if(e == null){
-                    LogUtil.v(TAG, "添加图片id成功");
+                    LogUtil.v(TAG, "添加茭白图片id成功");
                 }else{
-                    LogUtil.v(TAG, "添加图片id失败" + e.getMessage());
+                    LogUtil.v(TAG, "添加茭白图片id失败" + e.getMessage());
                 }
             }
         });
+
+        /*
+        添加食物图片代码，把食物对应的卡通图片放到数据库里
+         */
+//        Cool daikon = new Cool();
+//        daikon.setImageId(R.drawable.daikon);
+//        daikon.update("1DpL333D", new UpdateListener() {
+//            @Override
+//            public void done(BmobException e) {
+//                if(e == null){
+//                    LogUtil.v(TAG, "添加白萝卜图片id成功");
+//                }else{
+//                    LogUtil.v(TAG, "添加白萝卜图片id失败" + e.getMessage());
+//                }
+//            }
+//        });
+//        Normal cabbage = new Normal();
+//        cabbage.setImageId(R.drawable.cabbage1);
+//        cabbage.update("OALs666d", new UpdateListener() {
+//            @Override
+//            public void done(BmobException e) {
+//                if(e == null){
+//                    LogUtil.v(TAG, "添加包心菜图片id成功");
+//                }else{
+//                    LogUtil.v(TAG, "添加包心菜图片id失败" + e.getMessage());
+//                }
+//            }
+//        });
+//        Cool spinach = new Cool();
+//        spinach.setImageId(R.drawable.spinach);
+//        spinach.update("a24d6954c2", new UpdateListener() {
+//            @Override
+//            public void done(BmobException e) {
+//                if(e == null){
+//                    LogUtil.v(TAG, "添加菠菜图片id成功");
+//                }else{
+//                    LogUtil.v(TAG, "添加菠菜菜图片id失败" + e.getMessage());
+//                }
+//            }
+//        });
+//        Cool orange = new Cool();
+//        orange.setImageId(R.drawable.orange);
+//        orange.update("AIVo444D", new UpdateListener() {
+//            @Override
+//            public void done(BmobException e) {
+//                if(e == null){
+//                    LogUtil.v(TAG, "添加橙子图片id成功");
+//                }else{
+//                    LogUtil.v(TAG, "添加橙子图片id失败" + e.getMessage());
+//                }
+//            }
+//        });
+//        Warm scallion = new Warm();
+//        scallion.setImageId(R.drawable.scallion);
+//        scallion.update("3DvhBBBm", new UpdateListener() {
+//            @Override
+//            public void done(BmobException e) {
+//                if(e == null){
+//                    LogUtil.v(TAG, "添加葱图片id成功");
+//                }else{
+//                    LogUtil.v(TAG, "添加葱图片id失败" + e.getMessage());
+//                }
+//            }
+//        });
+//        Warm garlic = new Warm();
+//        garlic.setImageId(R.drawable.garlic);
+//        garlic.update("Z1WsMMMU", new UpdateListener() {
+//            @Override
+//            public void done(BmobException e) {
+//                if(e == null){
+//                    LogUtil.v(TAG, "添加大蒜图片id成功");
+//                }else{
+//                    LogUtil.v(TAG, "添加大蒜图片id失败" + e.getMessage());
+//                }
+//            }
+//        });
+//        Cool waxGourd = new Cool();
+//        waxGourd.setImageId(R.drawable.waxgourd);
+//        waxGourd.update("G4YQ111A", new UpdateListener() {
+//            @Override
+//            public void done(BmobException e) {
+//                if(e == null){
+//                    LogUtil.v(TAG, "添加冬瓜图片id成功");
+//                }else{
+//                    LogUtil.v(TAG, "添加冬瓜图片id失败" + e.getMessage());
+//                }
+//            }
+//        });
+//        Cold tomato = new Cold();
+//        tomato.setImageId(R.drawable.tomato);
+//        tomato.update("QsCNZZZv", new UpdateListener() {
+//            @Override
+//            public void done(BmobException e) {
+//                if(e == null){
+//                    LogUtil.v(TAG, "添加番茄图片id成功");
+//                }else{
+//                    LogUtil.v(TAG, "添加番茄图片id失败" + e.getMessage());
+//                }
+//            }
+//        });
+//        Normal sweetPotato = new Normal();
+//        sweetPotato.setImageId(R.drawable.sweetpotato);
+//        sweetPotato.update("2I0m3337", new UpdateListener() {
+//            @Override
+//            public void done(BmobException e) {
+//                if(e == null){
+//                    LogUtil.v(TAG, "添加甘薯图片id成功");
+//                }else{
+//                    LogUtil.v(TAG, "添加甘薯图片id失败" + e.getMessage());
+//                }
+//            }
+//        });
+//        Normal olive = new Normal();
+//        olive.setImageId(R.drawable.olive);
+//        olive.update("n2lJG33G", new UpdateListener() {
+//            @Override
+//            public void done(BmobException e) {
+//                if(e == null){
+//                    LogUtil.v(TAG, "添加橄榄图片id成功");
+//                }else{
+//                    LogUtil.v(TAG, "添加橄榄图片id失败" + e.getMessage());
+//                }
+//            }
+//        });
+//        Normal carrot = new Normal();
+//        carrot.setImageId(R.drawable.carrot);
+//        carrot.update("4qjQBBBF", new UpdateListener() {
+//            @Override
+//            public void done(BmobException e) {
+//                if(e == null){
+//                    LogUtil.v(TAG, "添加胡萝卜图片id成功");
+//                }else{
+//                    LogUtil.v(TAG, "添加胡萝卜图片id失败" + e.getMessage());
+//                }
+//            }
+//        });
+//        Cold cucumber = new Cold();
+//        cucumber.setImageId(R.drawable.cucumber);
+//        cucumber.update("yduv000Q", new UpdateListener() {
+//            @Override
+//            public void done(BmobException e) {
+//                if(e == null){
+//                    LogUtil.v(TAG, "添加黄瓜图片id成功");
+//                }else{
+//                    LogUtil.v(TAG, "添加黄瓜图片id失败" + e.getMessage());
+//                }
+//            }
+//        });
+//        Warm chineseChive = new Warm();
+//        chineseChive.setImageId(R.drawable.chinesechive);
+//        chineseChive.update("JulZ333G", new UpdateListener() {
+//            @Override
+//            public void done(BmobException e) {
+//                if(e == null){
+//                    LogUtil.v(TAG, "添加黄瓜图片id成功");
+//                }else{
+//                    LogUtil.v(TAG, "添加黄瓜图片id失败" + e.getMessage());
+//                }
+//            }
+//        });
     }
 
     @Override

@@ -79,7 +79,7 @@ public class LoginActivity extends AppCompatActivity {
                                 editor.clear();
                             }
                             editor.apply();
-                            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                            Intent intent = new Intent(LoginActivity.this, choiseActivity.class);
                             startActivity(intent);
                             Toast.makeText(LoginActivity.this, "登录成功" + gameUser.getMoney(), Toast.LENGTH_SHORT).show();
 

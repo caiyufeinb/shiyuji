@@ -37,6 +37,17 @@
         <activity android:name=".View.BagActivity" />
         <activity android:name=".View.bag_foodActivity" />
         <activity android:name=".View.questionActivity" />
+        <activity android:name=".View.choiseActivity" />
+        <activity android:name=".View.ConstitutionActivity" />
+        <activity android:name=".View.peaceActivity" />
+        <activity android:name=".View.lack_yangActivity" />
+        <activity android:name=".View.lack_yinActivity" />
+        <activity android:name=".View.phlegm_wetActivity" />
+        <activity android:name=".View.wet_hotActivity" />
+        <activity android:name=".View.full_of_qiActivity" />
+        <activity android:name=".View.lack_of_qiActivity" />
+        <activity android:name=".View.bloodActivity" />
+        <activity android:name=".View.special_qualityActivity"></activity>
     </application>
 
 </manifest>

@@ -18,4 +18,108 @@
     <string name="back">返回</string>
     <string name="result">游戏结果</string>
     <string name="confirm">确定</string>
+    <string name="enterGame">进入游戏</string>
+    <string name="constitution">体质调查问卷</string>
+    <string name="forum">论坛</string>
+    <string name="title">食遇记</string>
+    <string name="judge_constitution">中医体质判定标准表</string>
+    <string name="instruction">
+        体质分类
+2009年4月9日，《中医体质分类与判定》标准正式发布，该标准是我国第一部指导和规范中医体质研究及应用的文件，旨在为体质辨识及与中医体质相关疾病的防治、养生保健、健康管理提供依据，使体质分类科学化、规范化.
+
+《中医体质分类及判定》标准制订工作2006年6月正式启动，由国家中医药管理局主管，中华中医药学会体质分会编制完成。标准共分为范围、术语和定义、中医体质9种基本分类和特征、中医体质分类的判定、附录(中医体质分类和判定表)5个部分。中医体质学者根据人体形态结构、生理功能、心理特点及反应状态，对人体体质进行了分类，制订出中医体质量表及《中医体质分类与判定》标准。该标准应用了中医体质学、遗传学、流行病学、心理测量学、数理统计学等多学科交叉的方法，经中医体质专家、临床专家、流行病学专家多次讨论论证而建立，并在全国范围内进行了21948例流行病学调查，显示出良好的适应性、可行性.
+
+中医体质分以下九种:血淤体质、特禀体质、气郁体质、平和体质、湿热体质、痰湿体质、气虚体质、阴虚体质、阳虚体质。每个人所处的环境不同，日常生活不同，体质也不同，认清自己的体质，才能对症下药。
+
+</string>
+    <string name="shuoming">说明:</string>
+    <string name="judge">判定方法:</string>
+    <string name="content">回答《中医体质分类与判定表》中的全部问题，每一问题按5级评分，计算原始分及转化分，依标准判定体质类型。5级标准：没有(根本不)1分，很少(有一点)2分，有时(有些)3分，经常(相当)4分，总是(非常)5分;
+
+　　注：带*号的请逆向计分，即1→5，2→4，3→3，4→2，5→1</string>
+    <string name="peace">平和质</string>
+    <string name="lack_of_yang">阳虚质</string>
+    <string name="lack_of_yin">阴虚质</string>
+    <string name="phlegm_wet">痰湿质</string>
+    <string name="wet_hot">湿热质</string>
+    <string name="full_of_qi">气郁质</string>
+    <string name="lack_of_qi">气虚质</string>
+    <string name="blood">血瘀质</string>
+    <string name="special_quality">特禀质</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="peace_1">1.您精力充沛吗?</string>
+    <string name="peace_2">2.您容易疲乏吗?*</string>
+    <string name="peace_3">3.您说话声音低弱无力吗?*</string>
+    <string name="peace_4">4.您感到闷闷不乐、情绪低沉吗?*</string>
+    <string name="peace_5">5.您比一般人耐受不了寒冷(冬天的寒冷，夏天的冷空调、电扇等)吗?*</string>
+    <string name="peace_6">6.您能适应外界自然和社会环境的变化吗?</string>
+    <string name="peace_7">7.您容易失眠吗?*</string>
+    <string name="peace_8">8.您容易忘事(健忘)吗?*</string>
+    <string name="lack_of_yang_1">1.您手脚发凉吗?</string>
+    <string name="lack_of_yang_2">2.您胃脘部、背部或腰膝部怕冷吗? </string>
+    <string name="lack_of_yang_3">3.您感到怕冷、衣服比别人穿得多吗?</string>
+    <string name="lack_of_yang_4">4.您冬天更怕冷，夏天不喜欢吹电扇、空调吗?</string>
+    <string name="lack_of_yang_5">5.您比别人容易患感冒吗?</string>
+    <string name="lack_of_yang_6">6.您吃(喝)凉的东西会感到不舒服或怕吃(喝)凉的吗?</string>
+    <string name="lack_of_yang_7">7.您受凉或吃(喝)凉的东西后，容易腹泻、拉肚子吗?</string>
+    <string name="lack_of_yin_1">1.您感到手脚心发热吗?</string>
+    <string name="lack_of_yin_2">2.您感觉身体、脸上发热吗?</string>
+    <string name="lack_of_yin_3">3.您皮肤或口唇干吗?</string>
+    <string name="lack_of_yin_4">4.您口唇的颜色比一般人红吗?</string>
+    <string name="lack_of_yin_5">5.您容易便秘或大便干燥吗?</string>
+    <string name="lack_of_yin_6">6.您面部两颧潮红或偏红吗?</string>
+    <string name="lack_of_yin_7">7.您感到眼睛干涩吗?</string>
+    <string name="lack_of_yin_8">8.您感到口干咽燥、总想喝水吗?</string>
+    <string name="phlegm_wet_1">1.您感到胸闷或腹部胀满吗?</string>
+    <string name="phlegm_wet_2">2.您感到身体沉重不轻松或不爽快吗?</string>
+    <string name="phlegm_wet_3">3.您腹部肥满松软吗?</string>
+    <string name="phlegm_wet_4">4.您有额部油脂分泌多的现象吗?</string>
+    <string name="phlegm_wet_5">5.您上眼睑比别人肿(上眼睑有轻微隆起的现象)吗?</string>
+    <string name="phlegm_wet_6">6.您嘴里有黏黏的感觉吗?</string>
+    <string name="phlegm_wet_7">7.您平时痰多，特别是感到咽喉部总有痰堵着吗?</string>
+    <string name="phlegm_wet_8">8.您舌苔厚腻或有舌苔厚厚的感觉吗?</string>
+    <string name="wet_hot_1">1.您面部或鼻部有油腻感或者油亮发光吗?</string>
+    <string name="wet_hot_2">2.您脸上容易生痤疮或皮肤容易生疮疖吗?</string>
+    <string name="wet_hot_3">3.您感到口苦或嘴里有异味吗?</string>
+    <string name="wet_hot_4">4.您大便黏滞不爽、有解不尽的感觉吗?</string>
+    <string name="wet_hot_5">5.您小便时尿道有发热感、尿色浓(深)吗?</string>
+    <string name="wet_hot_6">6.您带下色黄(白带颜色发黄)吗?(限女性回答)</string>
+    <string name="wet_hot_7">7.您的阴囊潮湿吗?(限男性回答)</string>
+    <string name="full_of_qi_1">1.您感到闷闷不乐、情绪低沉吗?</string>
+    <string name="full_of_qi_2">2.您精神紧张、焦虑不安吗?</string>
+    <string name="full_of_qi_3">3.您多愁善感、感情脆弱吗?</string>
+    <string name="full_of_qi_4">4.您容易感到害怕或受到惊吓吗?</string>
+    <string name="full_of_qi_5">5.您胁肋部或乳房胀痛吗?</string>
+    <string name="full_of_qi_6">6.您无缘无故叹气吗?</string>
+    <string name="full_of_qi_7">7.您咽喉部有异物感，且吐之不出、咽之不下吗?</string>
+    <string name="lack_of_qi_1">1.您容易疲乏吗?</string>
+    <string name="lack_of_qi_2">2.您容易气短(呼吸短促，接不上气)吗?</string>
+    <string name="lack_of_qi_3">3.您容易心慌吗?</string>
+    <string name="lack_of_qi_4">4.您容易头晕或站起时晕眩吗?</string>
+    <string name="lack_of_qi_5">5.您比别人容易感冒吗?</string>
+    <string name="lack_of_qi_6">6.您喜欢安静、懒得说话吗?</string>
+    <string name="lack_of_qi_7">7.您说话声音低弱无力吗?</string>
+    <string name="lack_of_qi_8">8.您活动量稍大就容易出虚汗吗?</string>
+    <string name="blood_1">1.您的皮肤在不知不觉中会出现青紫瘀斑(皮下出血)吗?</string>
+    <string name="blood_2">2.您的两颧部有细微血丝吗?</string>
+    <string name="blood_3">3.您身体上有哪里疼痛吗?</string>
+    <string name="blood_4">4.您面色晦黯或容易出现褐斑吗?</string>
+    <string name="blood_5">5.您会出现黑眼圈吗?</string>
+    <string name="blood_6">6.您容易忘事(健忘)吗?</string>
+    <string name="blood_7">7.您口唇颜色偏黯吗?</string>
+    <string name="special_quality_1">1.您没有感冒也会打喷嚏吗?</string>
+    <string name="special_quality_2">2.您没有感冒也会鼻塞、流鼻涕吗?</string>
+    <string name="special_quality_3">3.您有因季节变化、温度变化或异味等原因而咳喘的现象吗?</string>
+    <string name="special_quality_4">4.您容易过敏(药物、食物、气味、花粉、季节交替时、气候变化等)吗?</string>
+    <string name="special_quality_5">5.您的皮肤起荨麻疹(风团、风疹块、风疙瘩)吗?</string>
+    <string name="special_quality_6">6.您的皮肤因过敏出现过紫癜(紫红色瘀点、瘀斑)吗?</string>
+    <string name="special_quality_7">7.您的皮肤一抓就红，并出现抓痕吗?</string>
+
+
 </resources>
+
+

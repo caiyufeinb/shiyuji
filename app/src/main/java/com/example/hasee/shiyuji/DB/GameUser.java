@@ -23,7 +23,7 @@ public class GameUser extends BmobUser {
     private Double money;
 
     /*
-    用户拥有的食物种类
+    用户拥有的食物种类及食疗方种类
      */
     private BmobRelation having;
 
