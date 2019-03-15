@@ -35,7 +35,8 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/score_one_lack_of_yang1"
                     android:text="@string/one"
-                    android:textSize="30sp"/>
+                    android:textSize="30sp"
+                    android:checked="true"/>
                 <RadioButton
                     android:layout_margin="10dp"
                     android:layout_width="wrap_content"
@@ -83,7 +84,8 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/score_one_lack_of_yang2"
                     android:text="@string/one"
-                    android:textSize="30sp"/>
+                    android:textSize="30sp"
+                    android:checked="true"/>
                 <RadioButton
                     android:layout_margin="10dp"
                     android:layout_width="wrap_content"
@@ -131,7 +133,8 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/score_one_lack_of_yang3"
                     android:text="@string/one"
-                    android:textSize="30sp"/>
+                    android:textSize="30sp"
+                    android:checked="true"/>
                 <RadioButton
                     android:layout_margin="10dp"
                     android:layout_width="wrap_content"
@@ -179,7 +182,8 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/score_one_lack_of_yang4"
                     android:text="@string/one"
-                    android:textSize="30sp"/>
+                    android:textSize="30sp"
+                    android:checked="true"/>
                 <RadioButton
                     android:layout_margin="10dp"
                     android:layout_width="wrap_content"
@@ -227,7 +231,8 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/score_one_lack_of_yang5"
                     android:text="@string/one"
-                    android:textSize="30sp"/>
+                    android:textSize="30sp"
+                    android:checked="true"/>
                 <RadioButton
                     android:layout_margin="10dp"
                     android:layout_width="wrap_content"
@@ -275,7 +280,8 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/score_one_lack_of_yang6"
                     android:text="@string/one"
-                    android:textSize="30sp"/>
+                    android:textSize="30sp"
+                    android:checked="true"/>
                 <RadioButton
                     android:layout_margin="10dp"
                     android:layout_width="wrap_content"
@@ -323,7 +329,8 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/score_one_lack_of_yang7"
                     android:text="@string/one"
-                    android:textSize="30sp"/>
+                    android:textSize="30sp"
+                    android:checked="true"/>
                 <RadioButton
                     android:layout_margin="10dp"
                     android:layout_width="wrap_content"

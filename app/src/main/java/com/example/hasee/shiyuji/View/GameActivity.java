@@ -29,7 +29,6 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
     private Button game3;
     private Button game4;
     private Button game5;
-    private Button game6;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,8 +43,6 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         game4.setOnClickListener(this);
         game5 = findViewById(R.id.five);
         game5.setOnClickListener(this);
-        game6 = findViewById(R.id.six);
-        game6.setOnClickListener(this);
     }
 
     @Override
@@ -72,9 +69,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                 intent = new Intent(GameActivity.this, questionActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.six:
-                intent = new Intent(GameActivity.this, questionActivity.class);
-                startActivity(intent);
+            default:
                 break;
 
         }

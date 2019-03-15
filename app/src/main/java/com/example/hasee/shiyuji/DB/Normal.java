@@ -20,6 +20,17 @@ public class Normal extends BmobObject {
 
     private Integer imageId;
 
+    private Integer foodId;
+
+    public Integer getFoodId(){
+        return foodId;
+    }
+
+    public Normal setFoodId(Integer foodId){
+        this.foodId = foodId;
+        return this;
+    }
+
     public Integer getImageId() {
         return imageId;
     }

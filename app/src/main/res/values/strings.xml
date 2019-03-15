@@ -1,4 +1,6 @@
 <resources>
+    <string name="tenLucky">十连抽</string>
+    <string name="oneLucky">单抽</string>
     <string name="app_name">shiyuji</string>
     <string name="UserName">用户名</string>
     <string name="PassWord">密码</string>
@@ -23,6 +25,8 @@
     <string name="forum">论坛</string>
     <string name="title">食遇记</string>
     <string name="judge_constitution">中医体质判定标准表</string>
+    <string name="开场动画">opening animation</string>
+    <string name="hint">点击图片继续</string>
     <string name="instruction">
         体质分类
 2009年4月9日，《中医体质分类与判定》标准正式发布，该标准是我国第一部指导和规范中医体质研究及应用的文件，旨在为体质辨识及与中医体质相关疾病的防治、养生保健、健康管理提供依据，使体质分类科学化、规范化.

@@ -19,7 +19,7 @@
                 android:textSize="30sp"
                 android:text="@string/blood"/>
 
-            <!--气郁问题1-->
+            <!--血瘀问题1-->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -36,7 +36,9 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/score_one_blood1"
                     android:text="@string/one"
-                    android:textSize="30sp"/>
+                    android:textSize="30sp"
+                    android:checked="true"
+                    />
                 <RadioButton
                     android:layout_margin="10dp"
                     android:layout_width="wrap_content"
@@ -84,7 +86,8 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/score_one_blood2"
                     android:text="@string/one"
-                    android:textSize="30sp"/>
+                    android:textSize="30sp"
+                    android:checked="true"/>
                 <RadioButton
                     android:layout_margin="10dp"
                     android:layout_width="wrap_content"
@@ -103,7 +106,7 @@
                     android:layout_margin="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/score_four_full_of_qi2"
+                    android:id="@+id/score_four_blood2"
                     android:text="@string/four"
                     android:textSize="30sp"/>
                 <RadioButton
@@ -132,7 +135,8 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/score_one_blood3"
                     android:text="@string/one"
-                    android:textSize="30sp"/>
+                    android:textSize="30sp"
+                    android:checked="true"/>
                 <RadioButton
                     android:layout_margin="10dp"
                     android:layout_width="wrap_content"
@@ -180,7 +184,8 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/score_one_blood4"
                     android:text="@string/one"
-                    android:textSize="30sp"/>
+                    android:textSize="30sp"
+                    android:checked="true"/>
                 <RadioButton
                     android:layout_margin="10dp"
                     android:layout_width="wrap_content"
@@ -228,7 +233,8 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/score_one_blood5"
                     android:text="@string/one"
-                    android:textSize="30sp"/>
+                    android:textSize="30sp"
+                    android:checked="true"/>
                 <RadioButton
                     android:layout_margin="10dp"
                     android:layout_width="wrap_content"
@@ -276,7 +282,8 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/score_one_blood6"
                     android:text="@string/one"
-                    android:textSize="30sp"/>
+                    android:textSize="30sp"
+                    android:checked="true"/>
                 <RadioButton
                     android:layout_margin="10dp"
                     android:layout_width="wrap_content"
@@ -324,7 +331,8 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/score_one_blood7"
                     android:text="@string/one"
-                    android:textSize="30sp"/>
+                    android:textSize="30sp"
+                    android:checked="true"/>
                 <RadioButton
                     android:layout_margin="10dp"
                     android:layout_width="wrap_content"

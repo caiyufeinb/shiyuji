@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     TextView money = null;    //金币显示文本框
     Button signUp = null;   //签到领金币按钮
     Button bag = null;      //背包按钮
+    Button luck = null;     //抽卡按钮
     private static final String TAG = "MainActivity";
 
     @Override
@@ -56,6 +57,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         signUp.setOnClickListener(this);
         bag = findViewById(R.id.bag);
         bag.setOnClickListener(this);
+        luck = findViewById(R.id.choujiang);
+        luck.setOnClickListener(this);
         //查询用户当前金币数
         GameUser user = BmobUser.getCurrentUser(GameUser.class);
         money.setText(String.valueOf(user.getMoney()));
@@ -66,7 +69,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         cold.setObjectId("43YdMMMe");
         //创建BmobRelation对象
         BmobRelation relation = new BmobRelation();
-        //将当前用户添加到食物表中的relation字段值中，表明当前用户拥有该食物
+        //将当前用户添加到食物表中的relation字段值中，表明当前食物的主人是某个用户
         relation.add(user);
         //多对多关联指向cold的relation字段
         cold.setRelation(relation);
@@ -104,15 +107,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         测试代码
         测试是否能在数据库中添加食物的图片id来实现显示图片的效果
         测试结果：成功*/
-        Cold jiaobai = new Cold();
-        jiaobai.setImageId(R.drawable.jiaobai);
-        jiaobai.update("43YdMMMe", new UpdateListener() {
+        Normal baicai = new Normal();
+        baicai.setImageId(R.drawable.cabbage);
+        baicai.update("7d1148f29a", new UpdateListener() {
             @Override
             public void done(BmobException e) {
                 if(e == null){
-                    LogUtil.v(TAG, "添加茭白图片id成功");
+                    LogUtil.v(TAG, "添加白菜图片id成功");
                 }else{
-                    LogUtil.v(TAG, "添加茭白图片id失败" + e.getMessage());
+                    LogUtil.v(TAG, "添加白菜图片id失败" + e.getMessage());
                 }
             }
         });
@@ -300,6 +303,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.bag:
                 intent = new Intent(MainActivity.this, BagActivity.class);
+                startActivity(intent);
+            case R.id.choujiang:
+                intent = new Intent(MainActivity.this, LuckyActivity.class);
                 startActivity(intent);
             default:
                 break;

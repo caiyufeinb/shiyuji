@@ -2,16 +2,16 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/backgroundall">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:background="@color/colorPrimary" />
-    <!--分割线-->
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="@color/colorAccent"/>
+        android:layout_height="150dp" />
+    <!--&lt;!&ndash;分割线&ndash;&gt;-->
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="2dp"-->
+        <!--android:background="@color/colorAccent"/>-->
     <!--输入用户名账号密码界面-->
     <LinearLayout
         android:layout_width="match_parent"
@@ -47,11 +47,11 @@
             android:hint="@string/supportpsw"
             android:inputType="textPassword"/>
     </LinearLayout>
-    <!--分割线-->
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="@color/colorAccent"/>
+    <!--&lt;!&ndash;分割线&ndash;&gt;-->
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="2dp"-->
+        <!--android:background="@color/colorAccent"/>-->
     <!--设置是否需要记住账号密码-->
     <LinearLayout
         android:layout_width="match_parent"

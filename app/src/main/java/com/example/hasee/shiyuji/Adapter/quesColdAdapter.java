@@ -71,7 +71,7 @@ public class quesColdAdapter extends RecyclerView.Adapter<quesColdAdapter.ViewHo
                         //此处填写答题评分逻辑
                         dig = new AlertDialog.Builder(context).create();
                         dig.show();//显示对话框
-                        Window window = dig.getWindow();//对话框窗口
+                        final Window window = dig.getWindow();//对话框窗口
                         window.setGravity(Gravity.CENTER);//设置对话框显示中间的位置
                         window.setContentView(R.layout.dialog_layout);
                         //获取星星评分控件
@@ -80,6 +80,12 @@ public class quesColdAdapter extends RecyclerView.Adapter<quesColdAdapter.ViewHo
                         //获取对话框按钮
                         button_determine = window.findViewById(R.id.dialog_confirm);
                         button_cancel = window.findViewById(R.id.dialog_back);
+                        button_cancel.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                dig.dismiss();
+                            }
+                        });
                         LogUtil.d(TAG, "点击确定");
                     }
                 });
@@ -89,7 +95,6 @@ public class quesColdAdapter extends RecyclerView.Adapter<quesColdAdapter.ViewHo
                         LogUtil.d(TAG, "点击取消");
                     }
                 });
-                commit.setCancelable(false);
                 commit.create();
                 commit.show();
             }

@@ -18,6 +18,8 @@ import com.example.hasee.shiyuji.View.bag_foodActivity;
 
 import java.util.List;
 
+import cn.bmob.v3.BmobObject;
+
 /**
  * 该类是寒性食物RecyclerView的适配器，用来在RecyclerView中显示用户拥有的寒性食物
  */

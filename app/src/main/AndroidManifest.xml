@@ -26,13 +26,7 @@
         tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".View.MainActivity" />
         <activity android:name=".View.GameActivity" />
-        <activity android:name=".View.LoginActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".View.LoginActivity" />
         <activity android:name=".View.RegisterActivity" />
         <activity android:name=".View.BagActivity" />
         <activity android:name=".View.bag_foodActivity" />
@@ -47,7 +41,15 @@
         <activity android:name=".View.full_of_qiActivity" />
         <activity android:name=".View.lack_of_qiActivity" />
         <activity android:name=".View.bloodActivity" />
-        <activity android:name=".View.special_qualityActivity"></activity>
+        <activity android:name=".View.special_qualityActivity" />
+        <activity android:name=".View.animationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".View.LuckyActivity"></activity>
     </application>
 
 </manifest>

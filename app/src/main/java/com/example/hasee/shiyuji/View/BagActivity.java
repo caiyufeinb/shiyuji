@@ -6,6 +6,7 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import com.example.hasee.shiyuji.Adapter.coldAdapter;
 import com.example.hasee.shiyuji.Adapter.coolAdapter;
@@ -23,6 +24,7 @@ import com.example.hasee.shiyuji.R;
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.bmob.v3.BmobObject;
 import cn.bmob.v3.BmobQuery;
 import cn.bmob.v3.BmobUser;
 import cn.bmob.v3.datatype.BmobPointer;
@@ -63,7 +65,9 @@ public class BagActivity extends AppCompatActivity implements View.OnClickListen
     private normalAdapter adapterNormal;
     /*
     缺少功能：给各个食物添加图片id，等图片到后再添加数据
+    目前完成情况：添加少部分图片
      */
+    List<BmobObject> foods = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -104,6 +108,7 @@ public class BagActivity extends AppCompatActivity implements View.OnClickListen
                         coldList = list;
                         adapterCold = new coldAdapter(coldList);
                         recyclerView.setAdapter(adapterCold);
+
                     }
                 });
                 break;

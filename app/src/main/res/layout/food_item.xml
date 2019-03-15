@@ -11,13 +11,16 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@drawable/shape_cold">
 
         <ImageView
             android:id="@+id/food_img"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:scaleType="centerCrop" />
+            android:scaleType="fitCenter"
+            android:background="@drawable/shape_cold"
+            />
 
         <TextView
             android:id="@+id/food_name"

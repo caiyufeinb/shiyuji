@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.animationActivity"
+    android:orientation="vertical">
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="530dp"
+        android:id="@+id/open_gif"
+        android:contentDescription="@string/开场动画"
+        android:background="@drawable/backgroundall"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/hint"
+        android:gravity="center_horizontal" />
+
+</LinearLayout>
